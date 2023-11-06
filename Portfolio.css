@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container {
+    align-items: center;
+}
+
+:root {
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Home-image img {
+    width: 35vw;
+}
+
+.Home-imageHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+.Home-imageHover:hover {
+    background:var(--bg-color);
+    opacity: .8;
+}
+
+
+.Home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.Home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.Home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.Home-content p {
+    font-size: 1.5rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+   
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+
+}
+
+
+.About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.About-image img {
+    width: 35vw;
+}
+
+.About-image {
+    animation: fadeIn 5s;
+}
+
+.headings {
+    text-align: center;
+    font-size: 4.5rem;
+}
+.About-content h2 {
+    text-align: left;
+    line-height: 1.2;
+
+}
+
+.About-content h3 {
+    font-size: 2.6rem;
+}
+
+.About-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+
+
+/*****EXPERIENCE SECTION*****/
+.Education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Education-image img {
+    width: 35vw;
+}
+
+.Education-imageHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+.Education-imageHover:hover {
+    background:var(--bg-color);
+    opacity: .8;
+}
+
+
+.Education-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.Education-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.Education-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.Education-content p {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/*****SKILL SECTION*****/
+skill-section{
+    position: relative;
+    margin: 100px 0;
+
+}
+
+.skill-section {
+    background-color: var(--second-bg-color);
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+
+
+.skills-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    color: #fff;
+}
+
+.skill-card{
+    position: relative;
+    padding: 50px 50px;
+}
+
+.skill-img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.skill-name{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px;
+}
+
+.skill-info{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skill-level{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    border: 10px solid;
+}
+
+.skill-card:nth-child(1) .skill-level{
+    background: #ff4f4f28;
+    border-color: #ff4f4f;
+    color: #ff4f4f;
+}
+
+.skill-card:nth-child(2) .skill-level{
+    background: #4fa0ff28;
+    border-color: #4fa0ff;
+    color: #4fa0ff;
+}
+
+.skill-card:nth-child(3) .skill-level{
+    background: #ffed4f28;
+    border-color: #ffed4f;
+    color: #ffed4f;
+}
+
+.skill-card:nth-child(4) .skill-level{
+    background: #52ff4f28;
+    border-color: #52ff4f;
+    color: #52ff4f;
+}
+
+
+
+
+
+/*C0ntact Section*/
+
+/*CONTACT US SECTION*/
+/* contact section styling */
+.Contact {
+    font-size: 3.6rem;
+    padding: auto;
+    margin: 30px;
+}
+
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px    ;
+    background-color: white;
+    padding: 20px 30px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }
+      
